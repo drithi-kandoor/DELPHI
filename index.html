@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div id="colorPickers">
+        <input type="color" id="color1" value="#9E6767" class="circlePicker">
+        <input type="color" id="color2" value="#D373F0" class="circlePicker">
+        <input type="color" id="color3" value="#FF550E" class="circlePicker">
+        <input type="color" id="color4" value="#F5FC6D" class="circlePicker">
+        <input type="color" id="color5" value="#FF9CD1" class="circlePicker">
+    </div> 
+    
+    <div id="sliders">
+        <label>
+          Opacity
+          <input type="range" id="alphaSlider" min="0" max="255" value="200">
+        </label>
+        <label>
+          Circle Size
+          <input type="range" id="sizeStartSlider" min="150" max="400" value="300">
+        </label>
+        <label>
+          Camera Scale
+          <input type="range" id="zoomSlider" min="50" max="500" value="280">
+        </label>  
+        <label>
+            Background Color
+            <input type="color" id="bgColorPicker" value="#FBFBE8">
+        </label>    
+        <button id="randomizeBtn">Randomize Face Points</button>      
+    </div>
+      
+      
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
