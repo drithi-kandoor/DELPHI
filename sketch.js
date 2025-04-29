@@ -22,7 +22,7 @@ let faceTimeout = 1000; // milliseconds to keep rendering after face disappears
 function setup() {
     createCanvas(windowWidth, windowHeight);
   
-    video = createCapture(VIDEO);
+    video = createCapture(VIDEO, {flipped:true});
     video.size(windowWidth, windowHeight);
     video.hide();
   
